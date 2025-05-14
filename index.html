@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AR Half-Sphere Video World</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="overlay">
+    <button id="start-button">Enter AR</button>
+  </div>
+  
+  <button class="exit-ar" id="exit-ar">×</button>
+  <div id="status"></div>
+  <div id="debug"></div>
+  
+  <!-- Hidden video element for preloading -->
+  <video id="video-source" style="display:none;" muted playsinline loop crossorigin="anonymous">
+    <source src="smartbackground.mp4" type="video/mp4">
+  </video>
+  
+  <script type="module" src="main.js"></script>
+</body>
+</html>
